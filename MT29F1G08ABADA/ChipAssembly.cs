@@ -79,6 +79,12 @@ namespace MT29F1G08ABADA
                 Size(5).
                 Operations("ReadId_90h");               
                 //Interpretation(ID_interpreting);
+            
+            myChip.registers.Add(                  // https://github.com/JuliProg/Wiki/wiki/OTP
+                "OTP memory area").
+                Size(63360).
+                Operations("OTP_Mode_On_v1").
+                Operations("OTP_Mode_Off_v1");    
 
             #endregion
 
