@@ -30,7 +30,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
 
         ChipAssembly()
         {
-            myChip.devManuf = "SAMSUNG";
+            myChip.devManuf = "Micron";
             myChip.name = "MT29F1G08ABADA";
             myChip.chipID = "2CF1809502";      // device ID - 2Ch F1h 80h 95h 02h (Micron-MT29F1G08ABADAWP-IT_D-datasheet.pdf page 33)
 
@@ -87,6 +87,7 @@ Dependency injection, DI based on MEF framework is used to connect the chip to t
         
 ```
 </section>
+
 
 
 
