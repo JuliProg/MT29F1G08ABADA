@@ -13,21 +13,31 @@ namespace MT29F1G08ABADA
 
     for automatically include <some code> in the READMY.md file in the repository
     */
-    #region 
-    // Warning !!!
-    // This chip requires the first command after power supply to issue a Reset command
-    #endregion
     
     
-    #region
+    
+    
     public class ChipAssembly
     {
         [Export("Chip")]
         ChipPrototype myChip = new ChipPrototype();
-        #endregion
+
 
 
         #region Chip parameters
+
+        //--------------Warning!!!!!!!!!!!!!!!-------------------------------------------
+        //
+        //   The first operation must be a command
+        //   Reset  !!!
+        //
+        //--------------------Vendor Specific Pin configuration---------------------------
+
+        //  VSP1(38pin) - NC    
+        //  VSP2(35pin) - NC
+        //  VSP3(20pin) - NC
+
+
 
         ChipAssembly()
         {
